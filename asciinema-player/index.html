@@ -135,24 +135,6 @@ $(document).ready(function(){
   });
 });
 
-$(document).ready(function(){
-  $('#addLocalPost').submit(function(e){
-    e.preventDefault();
-    let title = $('#title').val();
-    let body = $('#body ').val();
-
-    fetch('https://hihihippp.github.io/v2_myblog/asciinema/myposts.json', {
-      method: 'POST',
-      headers: {
-        'Accept': 'application/json, text/plain, */*',
-        'Content-type': 'application/json',
-      },
-      body: JSON.stringify({ title:title, body:body })
-    })
-      .then(res => res.json())
-      .then(data => console.log(data))
-  });
-});
   </script>
 
   
