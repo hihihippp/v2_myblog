@@ -102,7 +102,7 @@ $(document).ready(function(){
 
 $(document).ready(function(){
   $('#getLocalPosts').click(function(){
-    fetch('{{ 'asciinema/myposts.json' | absolute_url }}')
+    fetch('{{ "asciinema/myposts.json" | absolute_url }}')
       .then(res => res.json())
       .then(data => {
         let output = '<h2>All json</h2>';
