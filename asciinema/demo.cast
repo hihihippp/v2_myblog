@@ -1,0 +1,78 @@
+{
+  "version": 1,
+  "width": 90,
+  "height": 26,
+  "duration": 12.279627,
+  "command": null,
+  "title": null,
+  "env": {
+    "TERM": "xterm-256color",
+    "SHELL": "/bin/zsh"
+  },
+  "stdout": [
+    [
+      3.154007,
+      "\u001b[1m\u001b[7m%\u001b[27m\u001b[1m\u001b[0m                                                                                         \r \r\u001b]2;hp@hp-HP: ~/github/docsify-note/notebook/asciinema\u0007\u001b]1;..ook/asciinema\u0007"
+    ],
+    [
+      1.096002,
+      "\r\u001b[0m\u001b[27m\u001b[24m\u001b[J\u001b[01;32m➜  \u001b[36masciinema\u001b[00m \u001b[01;34mgit:(\u001b[31mmaster\u001b[34m) \u001b[33m✗\u001b[00m \u001b[K\u001b[?1h\u001b=\u001b[?2004h"
+    ],
+    [
+      2.066204,
+      "l"
+    ],
+    [
+      0.0468,
+      "\bls"
+    ],
+    [
+      0.1716,
+      "\u001b[?1l\u001b>\u001b[?2004l\r\r\n\u001b]2;ls --color=tty\u0007\u001b]1;ls\u0007"
+    ],
+    [
+      0.1404,
+      "\u001b[0m\u001b[01;34masciinema\u001b[0m  asciinema-player.css  asciinemaplayer.html  asciinema-player.js  demo.cast\r\n\u001b[1m\u001b[7m%\u001b[27m\u001b[1m\u001b[0m                                                                                         \r \r\u001b]2;hp@hp-HP: ~/github/docsify-note/not"
+    ],
+    [
+      0.0,
+      "ebook/asciinema\u0007\u001b]1;..ook/asciinema\u0007"
+    ],
+    [
+      0.897202,
+      "p"
+    ],
+    [
+      0.1716,
+      "\r\u001b[0m\u001b[27m\u001b[24m\u001b[J\u001b[01;32m➜  \u001b[36masciinema\u001b[00m \u001b[01;34mgit:(\u001b[31mmaster\u001b[34m) \u001b[33m✗\u001b[00m \u001b[K\u001b[?1h\u001b=\u001b[?2004h"
+    ],
+    [
+      0.0,
+      "p"
+    ],
+    [
+      0.0,
+      "\bpw"
+    ],
+    [
+      0.2652,
+      "d"
+    ],
+    [
+      0.1716,
+      "\u001b[?1l\u001b>\u001b[?2004l\r\r\n"
+    ],
+    [
+      0.0312,
+      "\u001b]2;pwd\u0007\u001b]1;pwd\u0007/home/hp/github/docsify-note/notebook/asciinema\r\n\u001b[1m\u001b[7m%\u001b[27m\u001b[1m\u001b[0m                                                                                         \r \r\u001b]2;hp@hp-HP: ~/github/docsify-note/notebook/asciinema\u0007\u001b]1;..ook/asciinema\u0007"
+    ],
+    [
+      1.063802,
+      "\r\u001b[0m\u001b[27m\u001b[24m\u001b[J\u001b[01;32m➜  \u001b[36masciinema\u001b[00m \u001b[01;34mgit:(\u001b[31mmaster\u001b[34m) \u001b[33m✗\u001b[00m \u001b[K\u001b[?1h\u001b=\u001b[?2004h"
+    ],
+    [
+      2.827605,
+      "\u001b[?2004l\r\r\n"
+    ]
+  ]
+}

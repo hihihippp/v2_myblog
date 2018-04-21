@@ -1,0 +1,121 @@
+<script>
+  $(document).ready(function(){
+
+    $('#showModal3').click(function(){
+      $('#myModal3').modal('show');
+    });
+
+    $('#hideModal3').click(function(){
+      $('#myModal3').modal('hide');
+    });
+
+    $('#myModal3').on('show.bs.modal', function(){
+      window.alert('show.bs.modal');
+    });
+
+    $('#myModal3').on('shown.bs.modal', function(){
+      window.alert('shown.bs.modal');
+    });
+
+    $('#myModal3').on('hide.bs.modal', function(){
+      window.alert('hide.bs.modal');
+    });
+
+    $('#myModal3').on('hidden.bs.modal', function(){
+      window.alert('hidden.bs.modal');
+    });
+
+    $(".custom-close").on('click', function() {
+        $('#myModal').modal('hide');
+    });
+    
+    /* show.bs.modal event example */
+    $('#myModal').on('show.bs.modal', function () {
+          window.alert('show event fired!');
+    });
+
+    /* shown.bs.modal event example */
+    $('#myModal').on('shown.bs.modal', function () {
+          window.alert('shown event fired!');
+    });
+
+    /* hide.bs.modal event example */
+    $('#myModal').on('hide.bs.modal', function () {
+          window.alert('hide event fired!');
+    });
+
+    /* hidden.bs.modal event example */
+    $('#myModal').on('hidden.bs.modal', function () {
+          window.alert('hidden event fired!');
+    });
+
+    $("p").click(function(){
+      $(this).hide();
+    });
+/*
+    $("#btn1").click(function(){
+      $("#test").hide();
+    }); 
+*/
+    $("#Toggle").click(function(){
+      $("#gallery2").collapse('toggle');
+    });
+
+    $("#Show").click(function(){
+      $("#gallery2").collapse('show');
+    });
+
+    $("#Hide").click(function(){
+      $("#gallery2").collapse('hide');
+    });
+
+    $("#gallery2").on('show.bs.collapse', function(){
+      alert("image is about to be expanded.")
+    });
+
+    $("#gallery2").on('shown.bs.collapse', function(){
+      alert("image has been shown.")
+    });
+
+    $("#gallery2").on('hide.bs.collapse', function(){
+      alert("image is about to be hidden.")
+    });
+
+    $("#gallery2").on('hidden.bs.collapse', function(){
+      alert("image has been hidden.")
+    });
+
+    $('#showAlert3').click(function(){
+      $('#myAlert3').show('fade');
+    });
+
+    $('#hideAlert3').click(function(){
+      $('#myAlert3').hide('fade');
+    });
+
+    $('[data-toggle="popover"]').popover();
+
+    //var content ="{{ "images/Chrysanthemum.jpg" | absolute_url }}"
+    //var content = "<div><img src="{{"images/Tulips.jpg" | absolute_url}}" class=" img-thumbnail img-fluid"></div>"
+/*
+    {% capture myImg %}
+      {{"images/Tulips.jpg" | absolute_url}}
+    {% endcapture %}
+
+    var content = "<div><img src="myImg" class=" img-thumbnail img-fluid"></div>"
+ */
+    var content = "<div>This?</div>"
+    var popoverTemplate = '<div class="popover" role="tooltip"><div class="arrow"></div><h3 class="popover-header">Header?</h3><div class="popover-body"></div></div>'
+
+    $('#myPopover3').popover({ 
+      html: true,
+      title: "popover in hover again?",
+      trigger: "hover",
+      content: content,
+      template: popoverTemplate
+     });
+
+    $('#myPopover4').popover();
+
+  });
+</script>

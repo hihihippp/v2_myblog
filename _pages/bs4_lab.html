@@ -1,0 +1,444 @@
+---
+layout: bootstrap4
+title: bootstrap_layout
+permalink: /bootstrap/
+---
+<button id="myPopover3" class="btn btn-primary"> popover </button>
+
+<button type="button" class="btn btn-lg btn-danger" data-toggle="popover" title="Popover title"
+  data-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover</button>
+
+<button id="myPopover4" type="button" class="btn btn-lg btn-danger" title="Popover title"
+  data-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover</button>
+
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+      the card's content.</p>
+    <a href="#" class="card-link">Card link</a>
+    <a href="#" class="card-link">Another link</a>
+  </div>
+</div>
+
+<hr>
+<hr>
+
+
+<button id="showAlert3" class="btn btn-primary">showAlert3</button>
+<button id="hideAlert3" class="btn btn-primary">hideAlert3</button>
+<div id="myAlert3" class="alert alert-success">
+  <h4 class="alert-heading">Well done!</h4>
+  <p>This is altert info.</p>
+  <p class="mb-0">another paragrah.</p>
+</div>
+
+<button id="showModal3" class="btn btn-primary">showModal3</button>
+<div id="myModal3" class="modal fade">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Title</h5>
+        <button class="close" data-dismiss="modal"><span>&times;</span></button>
+      </div>
+      <div class="modal-body">
+        <h5>Popover in a modal</h5>
+        <p>This <button role="button" class="btn btn-secondary popover-test" title="Popover title"
+            data-toggle="popover" data-content="Popover body content is set in this attribute.">button</button>          triggers a popover on click.</p>
+        <hr>
+        <h5>Tooltips in a modal</h5>
+        <p><a href="#" class="tooltip-test" title="Tooltip">This link</a> and <a href="#"
+            class="tooltip-test" title="Tooltip">that link</a> have tooltips on hover.</p>
+      </div>
+      <div class="modal-footer">
+        <button id="hideModal3" class="btn btn-primary">close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Button trigger modal -->
+<button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+
+
+        <a class="custom-close"> My Custom Close Link </a>
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+    <!-- /.modal-content -->
+  </div>
+  <!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->
+
+
+<hr>
+
+
+<div class="card">
+  <div class="card-body">
+    <div class="card-title">
+      <button class="card-link btn btn-primary" id="Toggle">toggle image gallery</button>
+      <button class="card-link btn btn-primary" id="Show">Show image gallery</button>
+      <button class="card-link btn btn-primary" id="Hide">Hide image gallery</button>
+    </div>
+    <p class="card-text">
+      <div class="container collapse show" id="gallery2">
+        <div class="row">
+          <div class="col-md-4 offset-md-2">
+            <img src="{{" images/Tulips.jpg " | absolute_url}}" class=" img-thumbnail img-fluid">
+          </div>
+        </div>
+      </div>
+    </p>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-body">
+    <div class="card-title"><button class="card-link btn btn-primary" data-target="#gallery1" data-toggle="collapse">toggle image gallery</button></div>
+    <p class="card-text">
+      <div class="container collapse show" id="gallery1">
+        <div class="row">
+          <div class="col-md-4 offset-md-2">
+            <img src="{{" images/Tulips.jpg " | absolute_url}}" class=" img-thumbnail img-fluid">
+          </div>
+        </div>
+      </div>
+    </p>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-body">
+    <div class="card-title"><a class="card-link btn btn-primary" href="#gallery" data-toggle="collapse">toggle image gallery</a></div>
+    <p class="card-text">
+      <div class="container collapse show" id="gallery">
+        <div class="row">
+          <div class="col-md-4 offset-md-2">
+            <img src="{{" images/Tulips.jpg " | absolute_url}}" class=" img-thumbnail img-fluid">
+          </div>
+        </div>
+      </div>
+    </p>
+  </div>
+</div>
+<p id="p-1">If you click on me, I will disappear.</p>
+<p>Click me away!</p>
+<p>Click me too!</p>
+
+<button id="btn1">Hide</button>
+<button id="btn2">Show</button>
+<p id="test">This is another paragraph.</p>
+
+<div class="alert alert-success dismissible" id="alt1">
+  <div class="alert-heading h4">welcome!
+    <button class="close" data-dismiss="alert"><span>&times;</span></button>
+  </div>
+  <p>Successful alert.</p>
+</div>
+<button id="btnShow" class="btn btn-primary">show</button>
+
+<div class="row">
+  <div class="col-md-4 mx-auto visible"><img src="{{" images/Desert.jpg " | absolute_url}}" class="rounded-circle img-fluid img-thumbnail card"
+      alt="..."></div>
+</div>
+
+<div class="d-inline p-2 m-3 bg-primary text-white">d-inline</div>
+<div class="d-inline p-2 m-3 bg-dark text-white">d-inline</div>
+<div class="d-inline p-2 m-3 bg-dark text-white">d-inline</div>
+
+<div class="d-inline  bg-primary">d-inline</div>
+<div class="d-inline  bg-secondary">d-inline</div>
+
+<div class="d-block m-2 bg-primary">d-inline</div>
+<div class="d-block m-2 bg-secondary">d-inline</div>
+<hr>
+
+<div class="d-block  p-2 bg-primary">d-inline</div>
+<div class="d-block  p-2 bg-secondary">d-inline</div>
+<div class="d-block  p-2 bg-primary">d-inline</div>
+<div class="d-block  p-2 bg-secondary">d-inline</div>
+
+<div class="d-inline-block  p-2 bg-primary">d-inline</div>
+<div class="d-inline-block  p-2 bg-secondary">d-inline</div>
+<div class="d-inline-block  p-2 bg-primary">d-inline</div>
+<div class="d-flex d-inline-block  p-2 bg-secondary d-none">d-inline</div>
+
+<div class="container">
+  <div class="row">
+    <div class="m-3 p-2 bg-primary">d-inline</div>
+    <div class="m-3 p-2 bg-secondary">d-inline</div>
+    <div class="m-3 p-2 bg-primary">d-inline</div>
+    <div class="m-3 p-2 bg-secondary">d-inline</div>
+  </div>
+</div>
+<div id="alertDiv" class="alert alert-warning alert-dismissible fade show">
+  <strong>Holly congratulation!</strong> the alert with close!
+  <button class="close" type="button" data-dismiss="alert"><span>&times;</span></button>
+</div>
+
+
+<div class="alert alert-success" role="alert">
+  <h4 class="alert-heading">Well done!</h4>
+  <p>Aww yeah, you successfully read this important alert message. This example text
+    is going to run a bit longer so that you can see how spacing within an alert
+    works with this kind of content.</p>
+  <hr>
+  <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and
+    tidy.</p>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12">
+      <h3>Bootstrap Image Gallery</h3>
+    </div>
+    <div class="col-lg-3 col-md-4 col-sm-6">
+      <a class="card" href="{{" images/Chrysanthemum.jpg " | absolute_url}}">
+        <p>Chrysanthemum</p>
+        <img src="{{" images/Chrysanthemum.jpg " | absolute_url}}" class="img-fluid img-thumbnail"
+          alt=""></a>
+    </div>
+    <div class="col-lg-3 col-md-4 col-sm-6">
+      <a class="card" href="{{" images/Desert.jpg " | absolute_url}}">
+        <p>Desert</p><img src="{{" images/Desert.jpg " | absolute_url}}" class="img-fluid img-thumbnail"
+          alt=""></a>
+    </div>
+    <div class="col-lg-3 col-md-4 col-sm-6">
+      <a class="card" href="{{" images/Hydrangeas.jpg " | absolute_url}}">
+        <p>Hydrangeas</p><img src="{{" images/Hydrangeas.jpg " | absolute_url}}" class="img-fluid img-thumbnail"
+          alt=""></a>
+    </div>
+    <div class="col-lg-3 col-md-4 col-sm-6">
+      <a class="card" href="{{" images/Jellyfish.jpg " | absolute_url}}">
+        <p>Jellyfish</p><img src="{{" images/Jellyfish.jpg " | absolute_url}}" class="img-fluid img-thumbnail"
+          alt=""></a>
+    </div>
+    <div class="col-lg-3 col-md-4 col-sm-6">
+      <a class="card" href="{{" images/Koala.jpg " | absolute_url}}">
+        <p>Koala</p><img src="{{" images/Koala.jpg " | absolute_url}}" class="img-fluid img-thumbnail"
+          alt=""></a>
+    </div>
+    <div class="col-lg-3 col-md-4 col-sm-6">
+      <a class="card" href="{{" images/Lighthouse.jpg " | absolute_url}}">
+        <p>Lighthouse</p><img src="{{" images/Lighthouse.jpg " | absolute_url}}" class="img-fluid img-thumbnail"
+          alt=""></a>
+    </div>
+    <div class="col-lg-3 col-md-4 col-sm-6">
+      <a class="card" href="{{" images/Penguins.jpg " | absolute_url}}">
+        <p>Penguins</p><img src="{{" images/Penguins.jpg " | absolute_url}}" class="img-fluid img-thumbnail"
+          alt=""></a>
+    </div>
+    <div class="col-lg-3 col-md-4 col-sm-6">
+      <a class="card" href="{{" images/Tulips.jpg " | absolute_url}}">
+        <p>Tulips</p><img src="{{" images/Tulips.jpg " | absolute_url}}" class="img-fluid img-thumbnail"
+          alt=""></a>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-4 offset-md-2">
+      <img src="{{" images/Tulips.jpg " | absolute_url}}" class=" img-thumbnail img-fluid card img-responsive">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-3">intent1</div>
+    <div class="col-md-3">intent2</div>
+    <div class="col-md-3">intent3</div>
+    <div class="col-md-3">intent4</div>
+  </div>
+</div>
+<button class="btn btn-primary" data-toggle="collapse" data-target="#content">toggle</button>
+<div id="content" class="container collapse show">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">NavbarBrand</a>
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu"
+      type="button">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div id="navbarMenu" class="collapse navbar-collapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item"><a class="nav-link active" href="#">action1</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">action2</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">action3</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">action4</a></li>
+      </ul>
+    </div>
+  </nav>
+</div>
+
+<!-- <ul class="nav nav-pills"> -->
+<!-- <ul class="nav nav-tabs"> -->
+<!-- <ul class="nav nav-pills flex-column"> -->
+<ul class="nav nav-pills flex-column">
+  <li class="nav-item"><a class="nav-link" href="#tab1" data-toggle="pill">tab1</a></li>
+  <li class="nav-item"><a class="nav-link" href="#tab2" data-toggle="pill">tab2</a></li>
+  <li class="nav-item"><a class="nav-link" href="#tab3" data-toggle="pill">tab3</a></li>
+</ul>
+<div class="tab-content">
+  <div id="tab1" class="tab-pane fade show active">tab content1</div>
+  <div id="tab2" class="tab-pane fade">tab content2</div>
+  <div id="tab3" class="tab-pane fade">tab content3</div>
+</div>
+
+<!-- <ul class="nav nav-tabs"> -->
+<ul class="nav nav-pills">
+  <li class="nav-item"><a class="nav-link active" href="#">Active</a></li>
+  <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">DropDown</a>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="#">action1</a>
+      <a class="dropdown-item" href="#">action2</a>
+      <a class="dropdown-item" href="#">action3</a>
+      <div class="dropdown-divider"></div>
+      <a class="dropdown-item" href="#">action4</a>
+    </div>
+  </li>
+  <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+  <li class="nav-item"><a class="nav-link disabled" href="#">Disabled</a></li>
+</ul>
+
+<div class="container">
+  <!-- <ul class="nav justify-content-center"> -->
+  <!-- <ul class="nav justify-content-start"> -->
+  <!-- <ul class="nav justify-content-end"> -->
+  <!-- <ul class="nav flex-column"> -->
+  <!-- <ul class="nav nav-tabs"> -->
+  <!-- <ul class="nav nav-pills"> -->
+  <!-- <ul class="nav nav-pills nav-fill"> -->
+  <!-- <ul class="nav nav-pills nav-justified"> -->
+  <ul class="nav nav-pills nav-justified">
+    <li class="nav-item"><a class="nav-link active" href="#">Active</a></li>
+    <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+    <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+    <li class="nav-item"><a class="nav-link disabled" href="#">Disabled</a></li>
+  </ul>
+</div>
+<div class="container">
+
+  <h1>hello, world!</h1>
+
+  {{site.baseurl|absolute_url}}
+
+  <a href="{{ site.baseurl | absolute_url }}">Home</a>
+</div>
+
+<hr>
+
+<div class="container-fluid">
+  <h1>h1 Bootstrap</h1>
+  <h2>h2 Bootstrap</h2>
+  <h3>h3 Bootstrap</h3>
+  <h4>h4 Bootstrap</h4>
+  <h5>h5 Bootstrap</h5>
+  <h6>h6 Bootstrap</h6>
+
+  <p class="h1">h1 Bootstrap</p>
+  <p class="h2">h2 Bootstrap</p>
+  <p class="h3">h3 Bootstrap</p>
+  <p class="h4">h4 Bootstrap</p>
+  <p class="h5">h5 Bootstrap</p>
+  <p class="h6">h6 Bootstrap</p>
+
+  <h3>
+    Fancy title here <small class="text-muted">sub title faded</small>
+  </h3>
+
+  <p class="h3">Fancy title here.<small class="text-muted">sub title faded here</small></p>
+
+  <h3>amazing title here <small class="text-muted">subtitle here</small></h3>
+
+  <h1 class="display-1">Display-1</h1>
+  <h1 class="display-2">Display-2</h1>
+  <h1 class="display-3">Display-3</h1>
+  <h1 class="display-4">Display-4</h1>
+  <h1 class="display-5">Display-5</h1>
+  <h1 class="display-6">Display-6</h1>
+
+  make a paragraph standout with <code>.lead</code>
+  <p class="lead">this is stand out para</p>
+  this is another normal paragraph.
+  <del datetime="2018-03-16T13:39:31 +0800">delete</del>
+  <s>unaccuraed text here</s>
+  <ins datetime="2018-03-16T13:43:23 +0800">additional text here</ins>
+  <u>underline by u tag</u>
+  <small>small text here</small>
+  <strong>strong text here</strong>
+  <strong>
+    <em>emphsise text here</em>
+  </strong>
+  <p class="text-right">text-right</p>
+  <p class="text-left">text-left</p>
+  <p class="text-center">text-center</p>
+  <p><abbr title="show as tips">abbr</abbr></p>
+  <span class="d-inline-block text-truncate" style="max-width:150px">leorem test text tex test text tex test text tex test text textttt</span>
+  <blockquote class="blockquote text-right">
+    <p>Consectetur in aliquid reiciendis non accusamus Expedita tempore modi tempora
+      saepe ipsum. Exercitationem alias maiores ducimus facilis possimus eaque
+      necessitatibus Labore id dolores doloribus iste optio. Perspiciatis fugit
+      aliquam consectetur
+    </p>
+    <footer class="blockquote-footer">this is said in <cite title="source title">source</cite></footer>
+  </blockquote>
+
+  <p class="font-weight-bold">font-weight-bold</p>
+  <p class="font-weight-normal">font-weight-normal</p>
+  <p class="font-weight-light">font-weight-light</p>
+  <p class="font-italic">font-italic</p>
+
+  <ul class="list-unstyled">
+    <li>text1</li>
+    <li>text2</li>
+    <li>text3</li>
+    <ul>
+      <li>item1</li>
+      <li>item2</li>
+    </ul>
+  </ul>
+  <ul>
+    <li>option1</li>
+    <li>option2</li>
+    <li>option3</li>
+  </ul>
+  <ul class="list-inline">
+    <li class="list-inlin-item">Amet distinctio quis?</li>
+    <li class="list-inlin-item">Ipsum doloribus quisquam</li>
+    <li class="list-inlin-item">Ipsum nemo corporis!</li>
+  </ul>
+  <div class=container>
+    <dl class="row">
+      <dt class="col-sm-3">head1</dt>
+      <dd class="col-sm-9">describe1, Amet praesentium dignissimos earum laudantium hic quas Sapiente
+        hic temporibus.</dd>
+      <dt class="col-sm-3">head2</dt>
+      <dd class="col-sm-9">describe2, Elit voluptate amet ea alias.
+        <p>Dolor repudiandae earum vel laudantium perferendis Assumenda provident
+          earum tempore</p>
+      </dd>
+      <dt class="col-sm-3">head3</dt>
+      <dd class="col-sm-9">describe3</dd>
+    </dl>
+  </div>
+  <a href="{{ site.baseurl | absolute_url }}">Home</a>
+</div>
+

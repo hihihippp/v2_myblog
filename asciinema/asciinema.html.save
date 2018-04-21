@@ -1,0 +1,24 @@
+---
+layout: page
+title: asciinema-player
+permalink: /asciinema-player/
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>asciinema example</title>
+  <link rel="stylesheet" type="text/css" href="{{ "asciinema/asciinema-player.css" | absolute_url }}"/>
+</head>
+<body>
+  <asciinema-player id="player" start-at="6" src="{{ "asciinema/demo.cast" | absolute_url}}"></asciinema-player>
+  <script src="{{ "asciinema/asciinema-player.js" | absolute_url }}"></script>
+  <script>
+    document.getElementById('player').addEventListener('loadedmetadata', function(e) {
+  console.log("duration is", this.duration);
+});
+  </script>
+</body>
+</html>
