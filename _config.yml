@@ -26,6 +26,8 @@ markdown: kramdown
 theme: minima
 plugins:
   - jekyll-paginate-v2
+  - jekyll-assets
+  - jekyll-paginate-content
 exclude:
   - Gemfile
   - Gemfile.lock
