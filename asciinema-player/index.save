@@ -9,13 +9,13 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Shows how the jekyll-paginate-v2 gem can be used to paginate on tags and categories together." />
 <meta property="og:description" content="Shows how the jekyll-paginate-v2 gem can be used to paginate on tags and categories together." />
-<link rel="canonical" href="/v2_myblog/asciinema-player/" />
-<meta property="og:url" content="/v2_myblog/asciinema-player/" />
+<link rel="canonical" href="https://hihihippp.github.io/v2_myblog/asciinema-player/" />
+<meta property="og:url" content="https://hihihippp.github.io/v2_myblog/asciinema-player/" />
 <meta property="og:site_name" content="Paginate Example - 03 Tags" />
 <script type="application/ld+json">
-{"description":"Shows how the jekyll-paginate-v2 gem can be used to paginate on tags and categories together.","@type":"WebPage","url":"/v2_myblog/asciinema-player/","headline":"asciinema-player","@context":"http://schema.org"}</script>
+{"description":"Shows how the jekyll-paginate-v2 gem can be used to paginate on tags and categories together.","@type":"WebPage","url":"https://hihihippp.github.io/v2_myblog/asciinema-player/","headline":"asciinema-player","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
-<link rel="stylesheet" href="/v2_myblog/assets/main.css"><link type="application/atom+xml" rel="alternate" href="/v2_myblog/feed.xml" title="Paginate Example - 03 Tags" /></head>
+<link rel="stylesheet" href="/v2_myblog/assets/main.css"><link type="application/atom+xml" rel="alternate" href="https://hihihippp.github.io/v2_myblog/feed.xml" title="Paginate Example - 03 Tags" /></head>
 <body><header class="site-header" role="banner">
 
   <div class="wrapper"><a class="site-title" rel="author" href="/v2_myblog/">Paginate Example - 03 Tags</a><nav class="site-nav d-flex d-inline-flex flex-row-reverse">
@@ -51,11 +51,11 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>asciinema example</title>
-  <link rel="stylesheet" type="text/css" href="/v2_myblog/asciinema/asciinema-player.css"/>
+  <link rel="stylesheet" type="text/css" href="https://hihihippp.github.io/v2_myblog/asciinema/asciinema-player.css"/>
 </head>
 <body>
-  <asciinema-player id="player" start-at="6" src="/v2_myblog/asciinema/demo.cast"></asciinema-player>
-  <script src="/v2_myblog/asciinema/asciinema-player.js"></script>
+  <asciinema-player id="player" start-at="6" src="https://hihihippp.github.io/v2_myblog/asciinema/demo.cast"></asciinema-player>
+  <script src="https://hihihippp.github.io/v2_myblog/asciinema/asciinema-player.js"></script>
   <script>
     document.getElementById('player').addEventListener('loadedmetadata', function(e) {
   console.log("duration is", this.duration);

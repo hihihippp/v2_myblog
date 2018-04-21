@@ -4,8 +4,8 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="/v2_myblog/_assets/css/asciinema-player.css">
-  <link rel="stylesheet" href="/v2_myblog/_assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://hihihippp.github.io/v2_myblog/_assets/css/asciinema-player.css">
+  <link rel="stylesheet" href="https://hihihippp.github.io/v2_myblog/_assets/css/bootstrap.min.css">
   <script src="_assets/js/asciinema-player.js"></script>
   <script src="_assets/js/jquery.min.js"></script>
   <script src="_assets/js/popper.min.js"></script>
@@ -14,11 +14,11 @@
 </head>
 <body>
   /v2_myblog <br>
-   <br>
- /v2_myblog/_assets/css/asciinema-player.css <br>
+  https://hihihippp.github.io <br>
+ https://hihihippp.github.io/v2_myblog/_assets/css/asciinema-player.css <br>
  /v2_myblog/_assets/css/asciinema-player.css <br>
 
-  <asciinema-player id="player" start-at="6" src="/v2_myblog/asciinema/demo.cast"></asciinema-player>
+  <asciinema-player id="player" start-at="6" src="https://hihihippp.github.io/v2_myblog/asciinema/demo.cast"></asciinema-player>
 
 The value of the emphasis is:<div id="result"></div>
 <button id="getText">getText</button>
@@ -60,7 +60,7 @@ The value of the emphasis is:<div id="result"></div>
 $(document).ready(function(){
   $('#getText').click(function(){
 /*
-    fetch('/v2_myblog/asciinema/simple.txt')
+    fetch('https://hihihippp.github.io/v2_myblog/asciinema/simple.txt')
       .then(function(res){
       return res.text();
     })
@@ -68,7 +68,7 @@ $(document).ready(function(){
         console.log(data);
       })
 */
-    fetch('/v2_myblog/asciinema/simple.txt')
+    fetch('https://hihihippp.github.io/v2_myblog/asciinema/simple.txt')
       .then(res => res.text())
       .then(data => {
         $('#result').html(data);
@@ -78,7 +78,7 @@ $(document).ready(function(){
 
 $(document).ready(function(){
   $('#getJSON').click(function(){
-    fetch('/v2_myblog/asciinema/tracks.json')
+    fetch('https://hihihippp.github.io/v2_myblog/asciinema/tracks.json')
       .then(res => res.json())
       .then(data => {
         let output = '<h2>All json</h2>';
@@ -141,7 +141,7 @@ $(document).ready(function(){
     let title = $('#title').val();
     let body = $('#body ').val();
 
-    fetch('/v2_myblog/asciinema/myposts.json', {
+    fetch('https://hihihippp.github.io/v2_myblog/asciinema/myposts.json', {
       method: 'POST',
       headers: {
         'Accept': 'application/json, text/plain, */*',
