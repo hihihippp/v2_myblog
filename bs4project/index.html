@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.4.0 -->
+<title>little project | Paginate Example - 03 Tags</title>
+<meta name="generator" content="Jekyll v3.7.3" />
+<meta property="og:title" content="little project" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Shows how the jekyll-paginate-v2 gem can be used to paginate on tags and categories together." />
+<meta property="og:description" content="Shows how the jekyll-paginate-v2 gem can be used to paginate on tags and categories together." />
+<link rel="canonical" href="/v2_myblog/bs4project/" />
+<meta property="og:url" content="/v2_myblog/bs4project/" />
+<meta property="og:site_name" content="Paginate Example - 03 Tags" />
+<script type="application/ld+json">
+{"description":"Shows how the jekyll-paginate-v2 gem can be used to paginate on tags and categories together.","@type":"WebPage","url":"/v2_myblog/bs4project/","headline":"little project","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/v2_myblog/assets/main.css"><link type="application/atom+xml" rel="alternate" href="/v2_myblog/feed.xml" title="Paginate Example - 03 Tags" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/v2_myblog/">Paginate Example - 03 Tags</a><nav class="site-nav d-flex d-inline-flex flex-row-reverse">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+              <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+              <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger">
+          <div class="d-flex flex-column flex-sm-row flex-wrap"><a class="page-link" href="/v2_myblog/tmux/">Tmux</a><a class="page-link" href="/v2_myblog/bs4project/">little project</a><a class="page-link" href="/v2_myblog/bootstrap/">bootstrap_layout</a><a class="page-link" href="/v2_myblog/about/">About</a><a class="page-link" href="/v2_myblog/asciinema-player/">asciinema-player</a></div>
+        </div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">little project</h1>
+  </header>
+
+  <div class="post-content">
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Example of Creating Custom Template for Bootstrap 3 Popovers</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<style></style>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+  
+<body data-spy="scroll" data-target="#navbar-example3" data-offset="0"><div class="container">
+<div class="row">
+
+  <div class="col-3">
+<nav id="navbar-example3" class="navbar flex-column navbar-light bg-light sticky-top">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <nav class="nav nav-pills flex-column">
+      <a class="nav-link" href="#item-1">Item 1</a>
+      <nav class="nav nav-pills flex-column">
+        <a class="nav-link ml-3 my-1" href="#item-1-1">Item 1-1</a>
+        <a class="nav-link ml-3 my-1" href="#item-1-2">Item 1-2</a>
+      </nav>
+      <a class="nav-link" href="#item-2">Item2</a>
+      <a class="nav-link" href="#item-3">Item3</a>
+      <nav class="nav nav-pills flex-column">
+        <a class="nav-link ml-3 my-1" href="#item-3-1">Item 3-1</a>
+        <a class="nav-link ml-3 my-1" href="#item-3-2">Item 3-2</a>
+      </nav>
+    </nav>
+  </nav></div>
+
+  <div class="col-9">
+<div>
+    <h4 id="item-1">Item 1</h4>
+    <p>Elit neque eaque ipsum corporis culpa dignissimos voluptatum incidunt adipisci dolor? Enim adipisci reprehenderit ducimus consequuntur maiores Temporibus facere excepturi ducimus mollitia natus? Animi ea voluptate inventore cupiditate quos Ad?</p>
+    <h5 id="item-1-1">Item 1-1</h5>
+    <p>Lorem harum ratione laborum sequi aliquam optio. Rem voluptatibus amet perferendis aliquam voluptatem. Alias possimus amet debitis dolores dicta Reiciendis ab amet esse adipisci ut. Soluta odit et ipsa libero</p>
+    <h5 id="item-1-2">Item 2-2</h5>
+    <p>Lorem dolore dolor natus eaque minima. Distinctio non vero maxime ratione cupiditate ipsam Animi quidem itaque facere architecto debitis. Illo deleniti quas repudiandae quisquam dolorem odit quia Cum voluptatem blanditiis.</p>
+    <h4 id="item-2">Item 2</h4>
+    <p>Lorem saepe quaerat sint asperiores dolorem Laborum libero voluptates et sint hic! Neque qui esse laborum totam laborum Perspiciatis culpa vero alias tempora laboriosam iure? Accusamus rerum cumque repellat eos</p>
+    <h4 id="item-3">Item 3</h4>
+    <p>Ipsum ducimus hic voluptatum magni fugiat? Earum pariatur dicta debitis beatae incidunt. Quod qui aut sequi aut ipsum minima. Voluptatem unde tenetur maiores facilis adipisci! Magnam porro sequi consequatur libero!</p>
+    <h5 id="item-3-1">Item 3-1</h5>
+    <p>Consectetur quam nam nostrum doloremque aliquam? Illum veritatis nulla debitis dignissimos voluptatibus! Ad minima praesentium aliquam aliquam temporibus reprehenderit Voluptatibus dolores maxime asperiores nihil dolorum tempora Vel doloremque quidem unde?</p>
+    <h5 id="item-3-2">Item 3-2</h5>
+    <p>Lorem excepturi nihil veritatis aut veniam Fuga tempore harum tenetur ab natus aspernatur Eligendi debitis vel commodi aliquid alias. Ut et veritatis laudantium vero libero Doloribus sapiente voluptate enim a.</p>
+  </div></div>
+</div>
+</div></body>
+</html>
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/v2_myblog/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Paginate Example - 03 Tags</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Paginate Example - 03 Tags</li><li><a class="u-email" href="mailto:jekyll@sverrirs.com">jekyll@sverrirs.com</a></li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/sverrirs"><svg class="svg-icon"><use xlink:href="/v2_myblog/assets/minima-social-icons.svg#github"></use></svg> <span class="username">sverrirs</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>Shows how the jekyll-paginate-v2 gem can be used to paginate on tags and categories together.
+</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
