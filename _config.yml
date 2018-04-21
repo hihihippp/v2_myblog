@@ -29,7 +29,7 @@ plugins:
 exclude:
   - Gemfile
   - Gemfile.lock
-  - [vendor]
+  - vendor
   
 # Collection configurations
 collections:
