@@ -117,6 +117,26 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
+  $('#getLocalPosts').click(function(){
+    fetch('/v2_myblog/asciinema/myposts.json')
+      .then(res => res.json())
+      .then(data => {
+        let output = '<h2>All json</h2>';
+        data.forEach(function(post){
+          output += `
+            <div>
+              <h3>title: ${post.title}</h3>
+              <p>body: ${post.body}</p>
+            </div>
+
+          `;
+        });
+        $('#result').html(output);
+      })
+  });
+});
+
+$(document).ready(function(){
   $('#addPost').submit(function(e){
     e.preventDefault();
     let title = $('#title').val();
