@@ -17,6 +17,7 @@ permalink: /asciinema-player/
 <title>asciinema example</title>
 </head>
 <body>
+{{ "_assets/css/asciinema-player.css" |absolute_url }}
   <asciinema-player id="player" start-at="6" src="{{ "asciinema/demo.cast" | absolute_url}}"></asciinema-player>
 
 The value of the emphasis is:<div id="result"></div>
